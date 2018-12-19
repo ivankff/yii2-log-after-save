@@ -1,6 +1,6 @@
 <?php
 
-namespace ivankff\logAfterSave;
+namespace ivankff\yii2LogAfterSave;
 
 use yii\base\Behavior;
 use yii\db\ActiveRecord;

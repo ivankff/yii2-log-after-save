@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ivankff\\logAfterSave\\": "src/"
+            "ivankff\\yii2LogAfterSave\\": "src/"
         }
     }
 }
