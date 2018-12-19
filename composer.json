@@ -1,0 +1,28 @@
+{
+    "name": "ivankff/yii2-log-after-save",
+    "description": "yii2 save logs after AR saving",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii 2", "behaviors", "log after save"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "ivankff",
+            "email": "ivankff@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ivankff/yii2-log-after-save/issues?state=open",
+        "source": "https://github.com/ivankff/yii2-log-after-save"
+    },
+    "require": {
+        "yiisoft/yii2": "~2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ivankff\\logAfterSave\\": "src/"
+        }
+    }
+}
