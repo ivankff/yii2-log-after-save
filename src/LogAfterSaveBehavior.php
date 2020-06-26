@@ -6,15 +6,14 @@ use yii\base\Behavior;
 use yii\db\ActiveRecord;
 use yii\db\AfterSaveEvent;
 
+/**
+ * @property ActiveRecord $owner
+ */
 class LogAfterSaveBehavior extends Behavior
 {
 
     const NAME = 'logAfterSave';
 
-    /**
-     * @var ActiveRecord
-     */
-    public $owner;
     /**
      * Список логов, которые надо сохранить после сохранения основной модели
      * @var ActiveRecord[]
@@ -40,7 +39,8 @@ class LogAfterSaveBehavior extends Behavior
         while ($item = array_shift($this->afterSave))
             $item->save();
 
-        $this->owner->detachBehavior(self::NAME);
+        if ($this->owner)
+            $this->owner->detachBehavior(self::NAME);
     }
 
     /**
